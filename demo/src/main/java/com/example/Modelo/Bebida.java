@@ -1,3 +1,5 @@
+package com.example.Modelo;
+
 public class Bebida  extends Producto{
     
     private Size size ; 

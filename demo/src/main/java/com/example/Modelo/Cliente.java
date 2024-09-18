@@ -1,3 +1,7 @@
+
+
+package com.example.Modelo;
+
 public class Cliente {
     private int id; 
     private String dni; 

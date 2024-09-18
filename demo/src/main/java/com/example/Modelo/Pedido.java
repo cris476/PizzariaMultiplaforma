@@ -1,3 +1,5 @@
+package com.example.Modelo;
+
 import java.util.Date;
 
 public class Pedido {

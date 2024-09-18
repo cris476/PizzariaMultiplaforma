@@ -1,3 +1,5 @@
+package com.example.Modelo;
+
 public  abstract class Producto {
     
 
