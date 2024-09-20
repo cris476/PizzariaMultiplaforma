@@ -1,9 +1,13 @@
 package com.example.Controller;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import com.example.Modelo.Cliente;
+import com.example.Modelo.EstadoPedido;
+import com.example.Modelo.LinePedido;
+import com.example.Modelo.Pedido;
 
 public class ControladorCliente {
     
@@ -18,7 +22,7 @@ public class ControladorCliente {
 
      
        
-
+         Pedido p = new Pedido(0,new Date(), 2.2f, EstadoPedido.ENTREGADO);
 
       public void RegistrarCliente(String dni 
         , String nombre
@@ -41,14 +45,19 @@ public class ControladorCliente {
       }
 
 
-
-
       public void loginCliente(String nombreUsuario , String passwordUsuario){
 
                      for (Cliente cliente : clientes) {
-                          if(cliente.equals(cliente)  &&  passwordUsuario  == cliente.getPassword() ); 
+                          if(cliente.equals(cliente)  &&  passwordUsuario  == cliente.getPassword() )  System.out.println("cliente registrado");
+                          else System.out.println("Usuario no acptado");
+                         
                      } 
 
+      }
+
+
+      public  void agregarLineaPedido(LinePedido p){
+        
       }
 
 

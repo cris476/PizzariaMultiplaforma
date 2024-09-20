@@ -2,15 +2,18 @@ package com.example.Modelo;
 
 import java.util.Date;
 
+import java.util.List;
 public class Pedido {
 
     private int id; 
     private Date fecha; 
     private Float precioTotal; 
     private EstadoPedido estado; 
+    private List<LinePedido> productos; 
+
 
     // Constructor
-    public Pedido(int id, Date fecha, Float precioTotal, EstadoPedido estado) {
+    public Pedido(int id, Date fecha, Float precioTotal, EstadoPedido estado         ) {
         this.id = id;
         this.fecha = fecha;
         this.precioTotal = precioTotal;
